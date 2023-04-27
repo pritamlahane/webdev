@@ -1,0 +1,75 @@
+.container {
+    width: 300px;
+    height: 600px;
+    background-color: gainsboro;
+    margin: 100px;
+    /* position: relative; */
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+.red {
+    position: relative;   /*this is position relative to parent */
+    background-color: red;
+    top: 100px;
+    left: 100px;
+}
+
+.green {
+    background-color: green;
+    position: absolute;    /* this will move relative to root element */
+    bottom: 0;  
+    right: 0;
+    z-index: 1;
+}
+
+.blue {
+    background-color: blue;
+    position: fixed;     /* this will move relative to root element */
+    bottom: 50px;
+    right: 50px;
+    z-index: 2;
+}
+
+.spacer {
+    height: 300vh;
+}
+
+.purple {
+    background-color: purple;
+    position: sticky;       /* parent ke relative kaha stick karna  specify that*/
+    top: 0px;
+    
+} 
+
+
+
+
+/* 
+The position property specifies the type of positioning method 
+used for an element (static, relative, fixed, absolute or sticky).
+
+HTML elements are positioned static by default.
+
+Static positioned elements are not affected by the top, 
+bottom, left, and right properties.
+
+jab me position absolute dunga tab vo block only float karenga on page.
+the parent of 'absolute element' is not always the root element.
+
+absolute element relative root element work nai karta
+ye relative to vo wala parent work karta he jisne apni postion 
+relative kar rakhi ho.
+agar kisi parent container ki relative position nahi hogi to
+relative to root element (html) kaam karega
+
+
+
+Z index => konsa element kis element ke upar ayega.
+jo child honge vo parent ke above ayega
+jiska z index jyada vo towards user jyda hoga
+
+*/

@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p {
+    width: 40%;
+    color: red;
+    display: inline-block;
+}
+
+a {
+    width: 60%;
+    display: inline-block;
+    margin: 20px;
+}
+
+img {
+    width: 200px;
+}
+
+ul {
+    text-align: end;
+    padding: 30px;
+    background-color: black;
+    color: aliceblue;
+    
+}
+
+li {
+    display: inline;
+    margin: 30px;
+}
+
+li:hover {
+    display: inline;
+    cursor: pointer;
+    color: aqua;
+
+}
+
+/* 
+
+paragraph is block element(ek ke niche ek ayenge) -> it will take full width (block elements: headings,div,forms,list)
+
+span is inline element: it will not take full width.(inline element: image,span, anchor )
+
+display values: block , inline , inline-block , none 
+(image is inline block element) that mean we can define height & width to it.
+paragraph is bydeafult display:block
+in display-block we cannot define width & height
+we want to add width to p then it must be inline-block
+
+
+
+
+*/

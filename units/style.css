@@ -1,0 +1,86 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+ }
+ 
+ main {
+     border: 5px solid blue; /*parent element */
+    width: 50%;    
+    /*it will take 50% of parent element (body) */
+    width: 25vw; 
+    height: 30vh;
+}
+
+body {
+    font-size: 2em;
+}
+
+h1 {
+     font-size: 2rem;   /* 48px */
+    /* font-size: 3em;   3em = 3 * 2 * 16 = 96px */
+}
+
+
+section {
+    border: 4px dashed green;   /*child element */
+    width: 50%;
+    width: 50vw;
+    height: 80vh;
+    /*it will take 50% of parent element (main) */
+
+}
+
+
+.box {
+    width: 200px;
+    height: 200px;
+    border: 20px solid red;
+    padding: 30px;
+    margin: 40px;
+}
+
+
+
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-shadow: 5px 2px 5px blue;
+}
+
+
+
+p {
+    line-height: 3rem;
+}
+/* units 
+
+100vw - view width - it will take 100% of total width
+vw is  absolute  unit and % is relative unit
+vw does not depend on parent
+1em = 16px  = em works relative to the parent
+rem = root em = works relative to Root ,,,it is best pratice to use
+
+body has default margin of 8px
+margin 2 element ko seprate karne ke liye use hoga
+padding use to seprate content from border
+
+box sizing : actual size of box is 200+ 50+ 50 = 300px
+            after applying border-box it will bw 200px
+
+
+
+
+Text & Fonts => inherit se parent ke properties ko a
+
+
+
+
+
+
+
+*/
+
+

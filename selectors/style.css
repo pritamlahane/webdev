@@ -1,0 +1,99 @@
+* {
+    /* margin: 0;
+    padding: 0;
+
+
+    it will apply to all element 
+     */
+}
+
+
+
+body {
+     font-size: 24px;  /*all child will inherit properites of parent; */
+     color: darkcyan;
+    background-color: hsl(60, 1%, 24%);
+    }
+
+#first>p {
+    color: rgb(16, 248, 62);
+}
+
+
+#second>h3,h4 {
+    color: yellow
+}
+
+#first,#second {
+    color: red;
+}
+
+
+.purple {
+    color: purple;
+    font-family:cursive;
+}
+
+.highlight {
+    background-color:aqua;
+    font-weight: bolder;
+}
+
+P:hover {
+    color: burlywood;
+}
+
+
+
+/* 
+
+
+
+
+
+
+
+
+
+
+
+
+
+element selector: The element selector selects HTML elements 
+                    based on the element name.
+
+
+
+Class Selector: this is mostly recommanded.
+                use . to access element.
+                
+
+
+
+Id selector:  use # to select id selector, id must be unique
+
+
+in chrome devlopers tool properties written on top will be consider first.
+user agent style is deafult css appiled by chrome
+
+
+Grouping Selectors : do not repeat your code
+    select multiple element and seprate by them ( , )
+
+
+Nested Selectors => ex: # first > P =first article ke andar jao and find paragraph
+                and usko ye properties apply karo...
+        don't apply wrong rules it will be ignore
+
+
+Specificity Order
+
+Id > Class > Element   
+
+
+Psudo Selector =  use  :  to apply 
+
+
+
+
+*/
